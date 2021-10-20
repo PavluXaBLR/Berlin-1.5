@@ -878,7 +878,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
-.footer .footer__container .footer__bottom .social img {
+.footer .footer__container .footer__bottom .social a {
   margin-right: 19px;
 }
 .footer .footer__container .footer__bottom .social :last-child {
