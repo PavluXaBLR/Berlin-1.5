@@ -641,6 +641,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
   top: 8px;
@@ -760,7 +761,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 43px;
   width: 43px;
   position: relative;
-  top: 55px;
+  top: 50px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -877,6 +878,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 35px;
 }
 .footer .footer__container .footer__bottom .social a {
   margin-right: 19px;
