@@ -206,6 +206,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   max-width: 1110px;
 }
+@media (max-width: 480px) {
+  .feature .feature__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .feature .block-vert-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +228,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 115px;
   margin-top: 115px;
   padding: 0;
+}
+@media (max-width: 480px) {
+  .feature .block-vert-line {
+    display: none;
+  }
 }
 .feature .feature__item {
   display: -webkit-box;
@@ -594,6 +613,20 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .pricing .pricing__container .pricing__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .pricing .pricing__container .checkbox {
   height: 46px;
   width: 250px;
@@ -609,6 +642,20 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 480px) {
+  .pricing .pricing__container .price__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .pricing .pricing__container .price__block .price {
   height: 515px;
   width: 350px;
@@ -618,6 +665,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0 42px 54px rgba(0, 0, 0, 0.0939481);
           box-shadow: 0 42px 54px rgba(0, 0, 0, 0.0939481);
   border-radius: 6px;
+}
+@media (max-width: 480px) {
+  .pricing .pricing__container .price__block .price {
+    margin-right: 0;
+  }
 }
 .pricing .pricing__container .price__block .price .rate {
   font-family: "Inter", sans-serif;
@@ -806,6 +858,20 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
   margin-bottom: 75px;
 }
+@media (max-width: 480px) {
+  .footer .footer__container .footer__menu-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer .footer__container .footer__menu-block .footer__menu {
   min-width: 165px;
   display: -webkit-box;
@@ -821,6 +887,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 0 10px 10px;
   margin-right: 69px;
 }
+@media (max-width: 480px) {
+  .footer .footer__container .footer__menu-block .footer__menu {
+    margin-right: 0;
+  }
+}
 .footer .footer__container .footer__menu-block .footer__menu:last-child {
   margin-right: 0;
 }
@@ -832,6 +903,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 212.5%;
   color: #F8FBFE;
+}
+@media (max-width: 480px) {
+  .footer .footer__container .footer__menu-block .footer__menu .footer__menu-list a {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
 }
 .footer .footer__container .footer__menu-block .footer__menu .footer__menu-list:first-child {
   margin-bottom: 23px;
@@ -914,8 +993,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -958,7 +1035,7 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
   border-radius: 10px;
 }
-.feedback .feedback__form .feedback__form-block .feedback__form-block-item {
+.feedback .feedback__form .feedback__form-block .feedback__form-block_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,14 +1047,22 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.feedback .feedback__form .feedback__form-block .feedback__form-block-item input {
+.feedback .feedback__form .feedback__form-block .feedback__form-block_item input {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 357.1428571429%;
   color: #000000;
   padding: 15px;
 }
-.feedback .feedback__form .feedback__form-block .feedback__form-block-item .feedback__form-item {
+@media (max-width: 480px) {
+  .feedback .feedback__form .feedback__form-block .feedback__form-block_item input {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 15px;
+    color: #000000;
+  }
+}
+.feedback .feedback__form .feedback__form-block .feedback__form-block_item .feedback__form-item {
   width: 456px;
   height: 50px;
   background: #FFFFFF;
@@ -985,10 +1070,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   margin-bottom: 20px;
 }
-.feedback .feedback__form .feedback__form-block .feedback__form-block-item .feedback__form-item:first-child {
+.feedback .feedback__form .feedback__form-block .feedback__form-block_item .feedback__form-item:first-child {
   margin-top: 50px;
 }
-.feedback .feedback__form .feedback__form-block .attach__img {
+.feedback .feedback__form .feedback__form-block .attach__file {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,13 +1090,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 357.1428571429%;
   color: #000000;
 }
-.feedback .feedback__form .feedback__form-block .attach__img .attach__img-button {
+.feedback .feedback__form .feedback__form-block .attach__file .attach__file_button {
   background: url("../img/icon_attach2.jpg") 10px no-repeat #F2F5F8;
   padding-left: 10px;
   width: 129px;
   height: 35px;
   border-radius: 3px;
 }
-.feedback .feedback__form .feedback__form-block .Manage__button {
-  width: 82%;
+.feedback .feedback__form .feedback__form-block .feedback__form-block_button {
+  width: 456px;
 }

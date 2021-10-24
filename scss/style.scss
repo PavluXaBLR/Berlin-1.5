@@ -218,6 +218,11 @@ $f-family: 'Inter', sans-serif;
       flex-wrap: wrap;
       margin: 0 auto;
       max-width: 1110px;
+      @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .block-vert-line {
@@ -226,6 +231,10 @@ $f-family: 'Inter', sans-serif;
       height: 115px;
       margin-top: 115px;
       padding: 0;
+      @media (max-width: 480px) {
+        display: none;
+      }
+
     }
 
     .feature__item {
@@ -468,6 +477,11 @@ $f-family: 'Inter', sans-serif;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 auto;
+        @media (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
 
       .checkbox {
@@ -482,6 +496,11 @@ $f-family: 'Inter', sans-serif;
       .price__block {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
         .price {
           height: 515px;
@@ -491,6 +510,9 @@ $f-family: 'Inter', sans-serif;
           background: #FFFFFF;
           box-shadow: 0 42px 54px rgba(0, 0, 0, 0.0939481);
           border-radius: 6px;
+          @media (max-width: 480px) {
+            margin-right: 0;
+          }
 
           .rate {
             @include style-title(13px, 32px);
@@ -649,6 +671,11 @@ $f-family: 'Inter', sans-serif;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 75px;
+        @media (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
         .footer__menu {
           min-width: 165px;
@@ -657,6 +684,10 @@ $f-family: 'Inter', sans-serif;
           align-items: flex-start;
           padding: 60px 0 10px 10px;
           margin-right: 69px;
+          @media (max-width: 480px) {
+            margin-right: 0;
+          }
+
 
           &:last-child {
             margin-right: 0;
@@ -667,6 +698,9 @@ $f-family: 'Inter', sans-serif;
 
             a {
               @include footer_menu_text;
+              @media (max-width: 480px) {
+                @include style-text(30px, 20px, $color-white);
+              }
             }
 
             &:first-child {
@@ -741,7 +775,6 @@ $f-family: 'Inter', sans-serif;
   }
   .feedback {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 
@@ -768,7 +801,7 @@ $f-family: 'Inter', sans-serif;
         box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
         border-radius: 10px;
 
-        .feedback__form-block-item {
+        .feedback__form-block_item {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -776,6 +809,10 @@ $f-family: 'Inter', sans-serif;
           input {
             @include feedback__form;
             padding: 15px;
+            @media (max-width: 480px) {
+              @include style-text(20px, 15px, $color-black);
+            }
+
           }
 
           .feedback__form-item {
@@ -792,7 +829,7 @@ $f-family: 'Inter', sans-serif;
           }
         }
 
-        .attach__img {
+        .attach__file {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -800,7 +837,7 @@ $f-family: 'Inter', sans-serif;
           margin-bottom: 20px;
           @include feedback__form;
 
-          .attach__img-button {
+          .attach__file_button {
             background: url("../img/icon_attach2.jpg") 10px  no-repeat #F2F5F8;
             padding-left: 10px;
             width: 129px;
@@ -808,8 +845,8 @@ $f-family: 'Inter', sans-serif;
             border-radius: 3px;
           }
         }
-        .Manage__button {
-          width: 82%;
+        .feedback__form-block_button {
+          width: 456px;
         }
       }
     }
