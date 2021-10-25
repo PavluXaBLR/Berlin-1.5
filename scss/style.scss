@@ -557,6 +557,7 @@ $f-family: 'Inter', sans-serif;
           @include pricing-title-text;
           padding: 120px 0 0 0;
           margin-bottom: 20px;
+          text-align: center;
           @media (min-width: 320px) and (max-width: 1200px) {
             padding: 50px 0 0 0;
             margin-bottom: 10px;
@@ -861,6 +862,9 @@ $f-family: 'Inter', sans-serif;
           @media (min-width: 320px) and (max-width: 620px) {
             flex-wrap: nowrap;
           }
+          @media (min-width: 320px) and (max-width: 600px) {
+            position: relative;
+          }
 
           .reserved {
             margin: 0 10px;
@@ -868,25 +872,40 @@ $f-family: 'Inter', sans-serif;
               @include style-text(10px, 10px, $color_text_bottom_footer);
               padding-top: 5px;
             }
-            @media (min-width: 320px) and (max-width: 599px) {
+            @media (min-width: 320px) and (max-width: 600px) {
               display: flex;
               align-items: end;
+              position: absolute;
+              left: 0;
             }
 
           }
 
           .footer__bottom-items {
             display: flex;
-            @media (min-width: 320px) and (max-width: 599px) {
-              @include flex-column-center;
+            @media (min-width: 320px) and (max-width: 600px) {
+              position: absolute;
+              bottom: 10px;
+              text-align: center;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              height: auto;
+              width: 100%;
             }
 
             li {
               margin-right: 20px;
+              &:last-child {
+                @media (min-width: 320px) and (max-width: 600px) {
+                  margin-right: 0;
+                }
+              }
+
 
               a {
                 @include footer_bottom_text;
-                @media (min-width: 320px) and (max-width: 599px) {
+                @media (min-width: 320px) and (max-width: 600px) {
                   text-align: center;
                 }
               }
@@ -896,9 +915,11 @@ $f-family: 'Inter', sans-serif;
           .social {
             display: flex;
             padding-right: 35px;
-            @media (min-width: 320px) and (max-width: 599px) {
+            @media (min-width: 320px) and (max-width: 600px) {
               display: flex;
               align-items: end;
+              position: absolute;
+              right: 0;
             }
 
             a {
