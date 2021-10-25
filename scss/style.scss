@@ -356,6 +356,9 @@ $f-family: 'Inter', sans-serif;
           position: relative;
           height: 487px;
           width: 487px;
+          @media (min-width: 320px) and (max-width: 601px) {
+
+          }
         }
 
         .analytics-img {
@@ -451,6 +454,9 @@ $f-family: 'Inter', sans-serif;
           height: 490px;
           @media (min-width: 320px) and (max-width: 1005px) {
             margin-bottom: 10px;
+          }
+          @media (min-width: 320px) and (max-width: 601px) {
+
           }
 
         }
@@ -746,6 +752,7 @@ $f-family: 'Inter', sans-serif;
         position: relative;
         min-height: 157px;
         width: 275px;
+        padding-left: 5px;
 
       }
 
@@ -792,9 +799,10 @@ $f-family: 'Inter', sans-serif;
           margin-bottom: 75px;
           @media (min-width: 320px) and (max-width: 1100px) {
             margin-bottom: 40px;
-          }
-          @media (min-width: 320px) and (max-width: 1100px) {
             justify-content: space-between;
+          }
+          @media (min-width: 320px) and (max-width: 540px) {
+
           }
 
           .footer__menu {
@@ -878,6 +886,9 @@ $f-family: 'Inter', sans-serif;
 
               a {
                 @include footer_bottom_text;
+                @media (min-width: 320px) and (max-width: 599px) {
+                  text-align: center;
+                }
               }
             }
           }
@@ -902,8 +913,12 @@ $f-family: 'Inter', sans-serif;
       }
     }
 
+
+    // Page Contact
+
+
     .content-top_contact {
-      margin-bottom: 90px;
+      margin-bottom: 60px;
     }
 
     .Manage {
@@ -911,10 +926,18 @@ $f-family: 'Inter', sans-serif;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 120px;
+      text-align: center;
+      @media (min-width: 320px) and (max-width: 721px) {
+        @include flex-column-center;
+        margin-bottom: 50px;
+      }
 
       h2 {
         @include style-title(28px, 178%);
         margin-right: 61px;
+        @media (min-width: 320px) and (max-width: 721px) {
+          margin-right: 0;
+        }
 
       }
     }
@@ -926,6 +949,7 @@ $f-family: 'Inter', sans-serif;
 
       h2 {
         @include content__block-title-text;
+          text-align: center;
       }
 
       .feedback_title {
@@ -934,6 +958,11 @@ $f-family: 'Inter', sans-serif;
 
       .feedback__form {
         margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
 
         .feedback__form-block {
           display: flex;
@@ -946,6 +975,7 @@ $f-family: 'Inter', sans-serif;
           box-sizing: border-box;
           box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
           border-radius: 10px;
+          margin: 5px;
 
           .feedback__form-block_item {
             display: flex;
@@ -955,9 +985,6 @@ $f-family: 'Inter', sans-serif;
             input {
               @include feedback__form;
               padding: 15px;
-              @media (max-width: 480px) {
-                @include style-text(20px, 15px, $color-black);
-              }
 
             }
 
@@ -994,6 +1021,9 @@ $f-family: 'Inter', sans-serif;
 
           .feedback__form-block_button {
             width: 456px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              width: auto;
+            }
           }
         }
       }
