@@ -473,36 +473,41 @@ h1, h2, h3, h4, h5, h6 {
   height: 487px;
   width: 487px;
 }
+@media (min-width: 310px) and (max-width: 500px) {
+  .wrapper .content__block1 .content__block1-container .content__block1__img {
+    overflow: auto;
+  }
+}
 .wrapper .content__block1 .content__block1-container .content__block1__img .analytics-img {
   background: #FFFFFF;
   -webkit-box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
           box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
   border-radius: 5px;
-  width: 336px;
+  max-width: 336px;
   height: 361px;
   position: absolute;
   top: 110px;
   left: 151px;
-  z-index: 3;
+  z-index: 2;
 }
 .wrapper .content__block1 .content__block1-container .content__block1__img .transparent-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-26.82%, rgba(248, 251, 254, 0.0001)), color-stop(100%, #F8FBFE), to(#FFFFFF));
   background: linear-gradient(180deg, rgba(248, 251, 254, 0.0001) -26.82%, #F8FBFE 100%, #FFFFFF);
-  width: 351px;
+  max-width: 351px;
   height: 192px;
   position: absolute;
   top: 200px;
-  z-index: 2;
+  z-index: 1;
 }
 .wrapper .content__block1 .content__block1-container .content__block1__img .deposit-img {
   background: #FFFFFF;
   border-radius: 5px;
-  width: 279px;
+  max-width: 279px;
   height: 368px;
   position: absolute;
   top: 3px;
   left: 15px;
-  z-index: 1;
+  z-index: 0;
   -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
 }
@@ -610,8 +615,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
   }
 }
-.wrapper .content__block2 .content__block2-container .uploading-img {
-  background-image: url("../img/uploading1.png");
+@media (min-width: 310px) and (max-width: 500px) {
+  .wrapper .content__block2 .content__block2-container .content__block2__img {
+    overflow: auto;
+  }
+}
+.wrapper .content__block2 .content__block2-container .content__block2__img .uploading-img {
   -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
   border-radius: 5px;
@@ -622,10 +631,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 6px;
   z-index: 0;
 }
-.wrapper .content__block2 .content__block2-container .transparent-layer {
+.wrapper .content__block2 .content__block2-container .content__block2__img .transparent-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-23.88%, rgba(255, 255, 255, 0.0001)), to(#FFFFFF));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) -23.88%, #FFFFFF 100%);
-  width: 326px;
+  width: 320px;
   height: 192px;
   position: absolute;
   top: 194px;
@@ -633,15 +642,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 @media (min-width: 320px) and (max-width: 560px) {
-  .wrapper .content__block2 .content__block2-container .transparent-layer {
+  .wrapper .content__block2 .content__block2-container .content__block2__img .transparent-layer {
     display: none;
   }
 }
-.wrapper .content__block2 .content__block2-container .activity-img {
-  background-image: url("../img/activity2.jpg");
+.wrapper .content__block2 .content__block2-container .content__block2__img .activity-img {
   border-radius: 5px;
   width: 365px;
   height: 487px;
+  position: absolute;
   top: 3px;
   left: 15px;
   z-index: 2;
@@ -891,7 +900,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 200%;
   color: #666666;
 }
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
   .wrapper .pricing .pricing__container .price__block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
