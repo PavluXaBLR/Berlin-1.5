@@ -356,38 +356,42 @@ $f-family: 'Inter', sans-serif;
           position: relative;
           height: 487px;
           width: 487px;
+            @media (min-width: 310px) and (max-width: 500px) {
+              overflow: auto;
+            }
+
 
           .analytics-img {
             background: #FFFFFF;
             box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
             border-radius: 5px;
-            width: 336px;
+            max-width: 336px;
             height: 361px;
             position: absolute;
             top: 110px;
             left: 151px;
-            z-index: 3;
+            z-index: 2;
 
           }
 
           .transparent-layer {
             background: linear-gradient(180deg, rgba(248, 251, 254, 0.0001) -26.82%, #F8FBFE 100%, #FFFFFF);
-            width: 351px;
+            max-width: 351px;
             height: 192px;
             position: absolute;
             top: 200px;
-            z-index: 2;
+            z-index: 1;
           }
 
           .deposit-img {
             background: #FFFFFF;
             border-radius: 5px;
-            width: 279px;
+            max-width: 279px;
             height: 368px;
             position: absolute;
             top: 3px;
             left: 15px;
-            z-index: 1;
+            z-index: 0;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
           }
         }
@@ -452,49 +456,46 @@ $f-family: 'Inter', sans-serif;
           @media (min-width: 320px) and (max-width: 1005px) {
             margin-bottom: 10px;
           }
-          @media (min-width: 320px) and (max-width: 601px) {
-
+          @media (min-width: 310px) and (max-width: 500px) {
+            overflow: auto;
           }
 
-        }
+          .uploading-img {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
+            border-radius: 5px;
+            width: 320px;
+            height: 297px;
+            position: absolute;
+            top: 65px;
+            right: 6px;
+            z-index: 0;
+          }
 
-        .uploading-img {
-          background-image: url("../img/uploading1.png");
-          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
-          border-radius: 5px;
-          width: 320px;
-          height: 297px;
-          position: absolute;
-          top: 65px;
-          right: 6px;
-          z-index: 0;
-        }
+          .transparent-layer {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) -23.88%, #FFFFFF 100%);
+            width: 320px;
+            height: 192px;
+            position: absolute;
+            top: 194px;
+            left: 223px;
+            z-index: 1;
+            @media (min-width: 320px) and (max-width: 560px) {
+              display: none;
+            }
+          }
 
-        .transparent-layer {
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) -23.88%, #FFFFFF 100%);
-          width: 326px;
-          height: 192px;
-          position: absolute;
-          top: 194px;
-          left: 223px;
-          z-index: 1;
-          @media (min-width: 320px) and (max-width: 560px) {
-            display: none;
+          .activity-img {
+            border-radius: 5px;
+            width: 365px;
+            height: 487px;
+            position: absolute;
+            top: 3px;
+            left: 15px;
+            z-index: 2;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-shadow: 0 22px 54px rgba(0, 0, 0, 0.136011);
           }
         }
-
-        .activity-img {
-          background-image: url("../img/activity2.jpg");
-          border-radius: 5px;
-          width: 365px;
-          height: 487px;
-          top: 3px;
-          left: 15px;
-          z-index: 2;
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          box-shadow: 0 22px 54px rgba(0, 0, 0, 0.136011);
-        }
-
         .content__block2-content {
           display: flex;
           flex-direction: column;
