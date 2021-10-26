@@ -351,51 +351,48 @@ $f-family: 'Inter', sans-serif;
         }
 
 
-        .content__block1__img {
+          .content__block1__img {
           display: flex;
           position: relative;
           height: 487px;
           width: 487px;
-          @media (min-width: 320px) and (max-width: 601px) {
 
+          .analytics-img {
+            background: #FFFFFF;
+            box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
+            border-radius: 5px;
+            width: 336px;
+            height: 361px;
+            position: absolute;
+            top: 110px;
+            left: 151px;
+            z-index: 3;
+
+          }
+
+          .transparent-layer {
+            background: linear-gradient(180deg, rgba(248, 251, 254, 0.0001) -26.82%, #F8FBFE 100%, #FFFFFF);
+            width: 351px;
+            height: 192px;
+            position: absolute;
+            top: 200px;
+            z-index: 2;
+          }
+
+          .deposit-img {
+            background: #FFFFFF;
+            border-radius: 5px;
+            width: 279px;
+            height: 368px;
+            position: absolute;
+            top: 3px;
+            left: 15px;
+            z-index: 1;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
           }
         }
 
-        .analytics-img {
-          background: #FFFFFF;
-          box-shadow: 0 22px 54px rgba(67, 87, 138, 0.29);
-          border-radius: 5px;
-          width: 336px;
-          height: 361px;
-          position: absolute;
-          top: 110px;
-          left: 151px;
-          z-index: 3;
-
-        }
-
-        .transparent-layer {
-          background: linear-gradient(180deg, rgba(248, 251, 254, 0.0001) -26.82%, #F8FBFE 100%, #FFFFFF);
-          width: 351px;
-          height: 192px;
-          position: absolute;
-          top: 200px;
-          z-index: 2;
-        }
-
-        .deposit-img {
-          background: #FFFFFF;
-          border-radius: 5px;
-          width: 279px;
-          height: 368px;
-          position: absolute;
-          top: 3px;
-          left: 15px;
-          z-index: 1;
-          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.103346);
-        }
-
-        .content__block1-content {
+          .content__block1-content {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -823,6 +820,9 @@ $f-family: 'Inter', sans-serif;
               margin-right: 10px;
               min-width: 100px;
             }
+            @media (min-width: 320px) and (max-width: 1000px) {
+              padding: 15px 0 10px 10px;
+            }
 
             &:last-child {
               margin-right: 0;
@@ -920,6 +920,10 @@ $f-family: 'Inter', sans-serif;
               position: absolute;
               right: 0;
             }
+            @media (min-width: 320px) and (max-width: 864px) {
+              margin: 0 10px;
+              padding-right: 0;
+            }
 
             a {
               margin-right: 19px;
@@ -949,6 +953,9 @@ $f-family: 'Inter', sans-serif;
       text-align: center;
       @media (min-width: 320px) and (max-width: 721px) {
         @include flex-column-center;
+        margin-bottom: 30px;
+      }
+      @media (min-width: 720px) and (max-width: 1000px) {
         margin-bottom: 50px;
       }
 
@@ -964,32 +971,35 @@ $f-family: 'Inter', sans-serif;
 
     .feedback {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h2 {
-        @include content__block-title-text;
-          text-align: center;
+      justify-content: center;
+      height: 100%;
+      width: auto;
+      margin-bottom: 120px;
+      @media (min-width: 320px) and (max-width: 1000px) {
+        margin-bottom: 20px;
       }
-
-      .feedback_title {
-        margin-bottom: 30px;
-      }
-
-      .feedback__form {
-        margin-bottom: 120px;
+      .feedback__container{
+        @include flex-column-center;
         display: flex;
-        justify-content: center;
-        width: 100%;
+        width: 600px;
         height: auto;
+        h2 {
+          @include content__block-title-text;
+            text-align: center;
+        }
 
+        .feedback_title {
+          margin-bottom: 30px;
+          @media (min-width: 320px) and (max-width: 1000px) {
+            margin-bottom: 10px;
+          }
+        }
 
         .feedback__form-block {
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 558px;
-          height: 485px;
+          width: 93%;
           background: #FFFFFF;
           border: 1px solid #E8E8EA;
           box-sizing: border-box;
@@ -1001,6 +1011,7 @@ $f-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 86%;
 
             input {
               @include feedback__form;
@@ -1009,12 +1020,12 @@ $f-family: 'Inter', sans-serif;
             }
 
             .feedback__form-item {
-              width: 456px;
-              height: 50px;
               background: #FFFFFF;
               border: 1px solid #E8E8EA;
               border-radius: 3px;
               margin-bottom: 20px;
+              height: 50px;
+              width: 100%;
 
               &:first-child {
                 margin-top: 50px;
@@ -1026,9 +1037,13 @@ $f-family: 'Inter', sans-serif;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 456px;
-            margin-bottom: 20px;
+            flex-wrap: wrap;
+            width: 86%;
             @include feedback__form;
+            @media (min-width: 320px) and (max-width: 460px) {
+              @include flex-column-center;
+              margin-bottom: 20px;
+            }
 
             .attach__file_button {
               background: url("../img/icon_attach2.jpg") 10px no-repeat #F2F5F8;
@@ -1040,10 +1055,8 @@ $f-family: 'Inter', sans-serif;
           }
 
           .feedback__form-block_button {
-            width: 456px;
-            @media (min-width: 320px) and (max-width: 480px) {
-              width: auto;
-            }
+            width: 86%;
+            margin-bottom: 50px;
           }
         }
       }
