@@ -822,13 +822,25 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 42px 54px rgba(0, 0, 0, 0.0939481);
   border-radius: 6px;
 }
-@media (min-width: 320px) and (max-width: 780px) {
+@media (min-width: 370px) and (max-width: 780px) {
   .wrapper .pricing .pricing__container .price__block .price {
-    margin: 10px;
+    margin: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 370px) {
+  .wrapper .pricing .pricing__container .price__block .price {
+    margin: 5px;
+    width: 310px;
+    padding: 18px 40px 18px 34px;
   }
 }
 .wrapper .pricing .pricing__container .price__block .price:last-child {
   margin-right: 10px;
+}
+@media (min-width: 320px) and (max-width: 780px) {
+  .wrapper .pricing .pricing__container .price__block .price:last-child {
+    margin-right: 10px;
+  }
 }
 .wrapper .pricing .pricing__container .price__block .price .rate {
   font-family: "Inter", sans-serif;

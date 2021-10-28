@@ -604,11 +604,19 @@ $f-family: 'Inter', sans-serif;
             background: #FFFFFF;
             box-shadow: 0 42px 54px rgba(0, 0, 0, 0.0939481);
             border-radius: 6px;
-            @media (min-width: 320px) and (max-width: 780px) {
-              margin: 10px;
+            @media (min-width: 370px) and (max-width: 780px) {
+              margin: 5px;
+            }
+            @media (min-width: 320px) and (max-width: 370px) {
+              margin: 5px;
+              width: 310px;
+              padding: 18px 40px 18px 34px;
             }
             &:last-child {
             margin-right: 10px;
+              @media (min-width: 320px) and (max-width: 780px) {
+                margin-right: 10px;
+              }
           }
 
             .rate {
